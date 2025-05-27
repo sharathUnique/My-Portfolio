@@ -3,10 +3,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My-Portfolio</title>
+<script src="/js/login.js"></script>
 </head>
 <body>
-    
-<form action="login.html"></form>
+    <div id="container">
+<form method="post" action="/login"></form>
+
+<div class="inputs"> 
+<label for="username"> Enter your Username or login ID</label>
+ <input id="username" onchange="onchangeName()" type="text" placeholder="login ID or Username " required>
+ </div>
+
+ <div class="inputs">
+ <label for="password"> Enter your password </label>
+ <input id="password" onchange="onchangePassword()" type="password" placeholder="password" required>
+</div>
+
+<div id="submitDiv">
+    <input type="submit" onclick="validate()">
+</div>
+
+<div >
+    <img  src="/img/contact-us.png" alt="Contact loading" onclick="showDetails()" width="100px">
+    <div id="contId" style="display: none;">
+       <p> mail me at : sharathbetter@gmail.com   </p>
+    </div>
+</div>
+
+ </div>
+
 
 </body>
 </html>
