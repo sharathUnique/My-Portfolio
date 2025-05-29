@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="/js/signUp.js"></script>
+<body>
+    
+<form id="signForm" method="post" action="/portfolio" >
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label><br><br>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"><br>
+  </div>
+  <div class="form-group">
+    <label for="phn">Enter your phone number</label><br><br>
+    <input type="tel" name="" id="Phn" placeholder="Enter Phone number">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label><br><br>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+   <div class="form-group">
+    <label for="exampleInputPassword1">Re-Enter your Password</label><br><br>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Re-Enter Password">
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1" ><br>
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button class="form-group type="submit" onclick="showAlert()" class="btn btn-primary" style="justify-content:center ;">Submit</button>
+</form>
+
+</body>
+<style>
+    body{
+        margin: 20px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        background-color: orange;
+    }
+    #signForm{
+        background-color:grey;
+        position: absolute;
+        height: 500px;
+    }
+    .form-group{
+       
+        width: 250px;
+        font-weight: bold;
+        position: relative;
+        justify-content: center;
+        margin: 20px;
+    }
+</style>
+</html>
+
