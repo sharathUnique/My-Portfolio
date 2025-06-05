@@ -1,7 +1,7 @@
 
 function validate() {
     // validate form here
-    alert("submit clicked");
+    alert("I am not doing any vlidation now!!! \nIt will be implemented soon \nWe are redirecting to main page \nThank you for your patience ");
     
     }
 
