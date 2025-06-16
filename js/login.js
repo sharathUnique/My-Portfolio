@@ -7,13 +7,13 @@ function validate() {
 
 function onchangeName(){
     // validate username here 
-    alert("name changed");
+    // alert("name changed");
    
 }
 
 function onchangePassword(){
      // validate password  here 
-    alert("password changed");
+    // alert("password changed");
 }
 
 function showDetails(){

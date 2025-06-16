@@ -1,37 +1,104 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My-Portfolio</title>
-<script src="/js/login.js"></script>
+    <title>My Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #b7cf7b;
+            font-family: Arial, sans-serif;
+        }
+
+        #container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: cadetblue;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            width: 300px;
+        }
+
+        .inputs {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #submitDiv {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: darkslategray;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #333;
+        }
+
+        .contact-section {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #contId {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+    <script src="/js/login.js"></script>
 </head>
 <body>
     <div id="container">
-<form method="post" action="/login"></form>
+        <form method="post" action="/views/portfolio.html">
+            <div class="inputs">
+                <label for="username">Enter your Username or Login ID</label>
+                <input id="username" onchange="onchangeName()" type="text" placeholder="Login ID or Username" required>
+            </div>
 
-<div class="inputs"> 
-<label for="username"> Enter your Username or login ID</label>
- <input id="username" onchange="onchangeName()" type="text" placeholder="login ID or Username " required>
- </div>
+            <div class="inputs">
+                <label for="password">Enter your Password</label>
+                <input id="password" onchange="onchangePassword()" type="password" placeholder="Password" required>
+            </div>
 
- <div class="inputs">
- <label for="password"> Enter your password </label>
- <input id="password" onchange="onchangePassword()" type="password" placeholder="password" required>
-</div>
+            <div id="submitDiv">
+                <input type="submit" onclick="validate()">
+            </div>
 
-<div id="submitDiv">
-    <input type="submit" onclick="validate()">
-</div>
-
-<div >
-    <img  src="/img/contact-us.png" alt="Contact loading" onclick="showDetails()" width="100px">
-    <div id="contId" style="display: none;">
-       <p> mail me at : sharathbetter@gmail.com   </p>
+            <div class="contact-section">
+                <img src="/img/contact-us.png" alt="Contact loading" onclick="showDetails()" width="70px">
+                <div id="contId">
+                    <p>Mail me at: sharathbetter@gmail.com</p>
+                </div>
+            </div>
+        </form>
     </div>
-</div>
-
- </div>
-
-
 </body>
 </html>
