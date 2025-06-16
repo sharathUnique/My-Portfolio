@@ -1,35 +1,242 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My-Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My-Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
 </head>
 <body>
-    <div class="welDiv">
-    <h1 id="welcomeText" >Welcome to my Portfolio !!! </h1> 
-    <h2>  Please sign in  <a href="/views/login.html">here</a>  </h2> 
+
+  <div class="container1">
+
+    <nav class="navBar">
+      <a class="nav1"  href="#payment">Home</a>
+      <a class="nav1" href="#aboutUs" onclick="">About</a>
+      <a class="nav1" href="#conDet" onclick="">Contact</a>
+      <a class="nav1" href="#education" onclick="">Education</a>
+      <a class="nav1" href="#skills" onclick="">Skills</a>
+      <a class="nav1" href="#projects" onclick="">projects</a>
+      <a class="nav1" href="#workedFor" onclick="">Companies</a>
+      <a class="nav1" href="#payment" onclick="">payment</a>
+      <a class="nav1" href="#message" onclick="">messaging</a>
+    </nav>
+
+ <div class="divs" id="profile" style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px; background-color: #e6f0ff; padding: 10px; border-radius: 8px; max-width: 100%;">
+  
+  <!-- Image first -->
+  <img src="/img/sharath_image.jfif"
+       alt="Profile pic loading"
+       style="border-radius: 50%; width: 20%; height: 20%px; object-fit: cover;margin: 30px;" />
+
+  <!-- Text that wraps -->
+  <div style="flex: 1; min-width: 200px; word-wrap: break-word;">
+   <strong>“Engineering graduate with hands-on experience in Full Stack Development and modern web technologies”
+As an experienced IT professional, I have a proven track record in software Development lifecycle, project management, and significantly improving operations. My greatest desire is to become a Techno-architect.   </strong> 
+
+  </div>
+  
+</div>
+
+    
+<div class="divs" id="skills" style="
+  width: 100%;
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background-color: #f9f9f9;
+">
+  <p><strong style="font-size: 30px;">Skills</strong></p>
+  <ul style="
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  ">
+    <li style="border: 1px solid #ccc; padding: 8px; border-radius: 4px; text-align: center;-o"><strong>Java </strong></li>
+    <li style="border: 1px solid #ccc; padding: 8px; border-radius: 4px; text-align: center;"><strong> Spring Boot</strong></li>
+    <li style="border: 1px solid #ccc; padding: 8px; border-radius: 4px; text-align: center;"><strong> Microservices</strong> </li>
+    <li style="border: 1px solid #ccc; padding: 8px; border-radius: 4px; text-align: center;"><strong>REST </strong></li>
+    <li style="border: 1px solid #ccc; padding: 8px; border-radius: 4px; text-align: center;"><strong>SQL </strong></li>
+    <li style="border: 1px solid #ccc; padding: 8px; border-radius: 4px; text-align: center;"><strong>Git </strong></li>
+    <li style="border: 1px solid #ccc; padding: 8px; border-radius: 4px; text-align: center;"><strong> GitLab</strong></li>
+    <li style="border: 1px solid #ccc; padding: 8px; border-radius: 4px; text-align: center;"><strong>HTML </strong></li>
+    <li style="border: 1px solid #ccc; padding: 8px; border-radius: 4px; text-align: center;"><strong> CSS</strong></li>
+    <li style="border: 1px solid #ccc; padding: 8px; border-radius: 4px; text-align: center;"><strong> JavaScript</strong></li>
+    <li style="border: 1px solid #ccc; padding: 8px; border-radius: 4px; text-align: center;"><strong>React </strong></li>
+  </ul>
+</div>
+
+
+
+   
+
+<div class="divs" id="workedFor" style="height: 500px; overflow: hidden;">
+  <!-- Title Section -->
+  <p> 
+    <strong style="font-size: 30px;">Companies Worked For .....</strong>
+  </p>
+  
+  <!-- Iframe Section -->
+  <iframe 
+    src="https://sharp.co.in" 
+    frameborder="0" 
+    style="width: 100%; height: calc(100% - 60px); border: none;">
+  </iframe>
+  
+  <!-- Link Section -->
+  <div> 
+    <a href="http://sharp.co.in" style="color: darkblue; display: inline-block; margin-top: 10px;">
+      <strong>Click here to visit the website</strong>
+    </a>
+  </div>
+</div>
+
+
+   <div class="divs" style="min-height: 200px; overflow: auto;" id="projects">
+  <p><strong style="font-size: 30px;">Projects</strong></p>
+  
+  <div id="projectDetails" style="overflow-y: auto; min-height: 100px;background-color: lightgreen;">
+    <p>
+      <strong style="font-size: 20px;">Project 1: Document Management System & Licensing Server (with MFP Integration)</strong><br>
+      
+     <strong>Project Components:</strong><br>
+      Document Management System (DMS)<br>
+      Modules: Shared Folder, Backup, Echobo, Fax<br>
+      Java-based centralized backend<br>
+      Product Key Server / Licensing System<br>
+      Centralized license key server for Admin Portal, User Portal, Common Key Generator<br>
+      MFP (Multi-Function Printer) feature provisioning<br><br>
+
+      🛠️ <strong>Roles & Responsibilities:</strong><br>
+      Developed backend services using Java and RESTful APIs for document storage and management.<br>
+      Implemented CRUD operations optimized for performance and scalability.<br>
+      Built responsive UI components; actively fixed UI/UX bugs.<br>
+      Added authentication and authorization mechanisms for secure access.<br>
+      Analyzed and improved existing flows to enhance system performance.<br>
+      Handled unit testing with Mockito and maintained code quality using SonarQube.<br>
+      Participated in post-production support and bug fixing.<br>
+      Led or participated in Agile ceremonies, such as sprint-end demos with Japan-based stakeholders.<br>
+      Designed and implemented components for a product licensing server, ensuring secure license issuance and verification for MFP devices.<br>
+      Involved in feature development, bug fixes, and code reviews as part of the ongoing Agile process.<br><br>
+
+      <strong style="font-size: 20px;">Project 2: LET-Meat – Online Meat Delivery Platform (E-Commerce, B2C)</strong><br>
+
+      📌 <strong>Project Scope:</strong><br>
+      B2C platform for ordering and delivering meat online.<br>
+      Focused on the Customer Module of the web application.<br><br>
+
+      🛠️ <strong>Roles & Responsibilities:</strong><br>
+      Developed and maintained Customer Microservices using Spring Boot, REST APIs, and JPA Repositories.<br>
+      Designed APIs for:<br>
+      - User registration<br>
+      - Order placement<br>
+      - Customer profile management<br>
+      Managed customer data using MySQL.<br>
+      Followed SDLC best practices from design to deployment.<br>
+      Wrote clean, testable, and maintainable code following industry standards.<br>
+      Participated in code reviews, contributed to system design, and suggested alternative technologies to improve architecture.<br>
+      Designed and implemented microservices architecture with a focus on scalability and modularity.
+    </p>
+  </div>
+</div>
+
+
+    <!-- <div class="divs" style=" height: 200px;" id="aboutUs"> <p> <strong style="font-size: 30px;"> About Me </strong> </p> </div> -->
+
+ <div class="divs" id="education">
+  <p><strong style="font-size: 30px;">Education</strong></p>
+  <div style="background-color: #d0db75; padding: 15px; border-radius: 8px;">
+    <p><strong>Bachelors in Electronics and Communication</strong></p>
+    <p><strong>ATME College of Engineering Mysore</strong></p>
+    <p><strong>VTU University</strong></p>
+    <p><strong>6.2 CGPA</strong></p>
+    
+    <!-- Responsive iframe -->
+    <iframe 
+      src="https://atme.edu.in/" 
+      style="width: 100%; height: 400px; border: none;" 
+      allowfullscreen
+    ></iframe>
+  </div>
+</div>
+
+
+    <div>  
+    <div class="divs" id="conDet" > <p><strong style="font-size: 30px;"> Contact Details  </strong>  </p>
+    	<div style="background-color: aquamarine;height: 100%;">  
+      <p><strong>  Email: gowdasharath357@gmail.com  </strong></p>
+      <p><strong> Phone: 91+ 7975921202</strong> </p>
+      <p><strong>  LinkedIn: <a href="https://www.linkedin.com/in/sharath-a-r a31485135">https://www.linkedin.com/in/sharath-a-r a31485135 </a> </strong></p>  	  
+      <p> <strong>GitHub: <a href=" https://github.com/sharathUnique">https://github.com/sharathUnique</a>  </strong> </p> 	
+      <p> <strong> Location: Bangalore, India.</strong></p>
+      </div>
     </div>
+    </div>
+
+    <div class="divs" style=" height: 200px;" id="payment"><p> <strong style="font-size: 30px;"> How I Integrated Payment Gateway !!!!! </strong> </p> 
+    <div style="background-color: #d0db75;"> <p><strong>Implementation is in Progress .....! </strong></p>  </div>
+    </div>
+
+    <!-- <div class="divs" style="height: 200px;" id="contactMe"> <p> <strong style="font-size: 30px;">Want To Contact Me.......    </strong></p></div> -->
+
+<div class="divs" style=" height: 200px;" id="message"><p> <strong style="font-size: 30px;"> How I Integrated Messaging !!!!! </strong> </p>
+     <div style="background-color: #d0db75;"> <p><strong>Implementation is in Progress .....! </strong></p>  </div>
+</div>
+  </div>
+
 </body>
+
 <style>
-      body {
+.nav1{
+
+    padding: 5px;
+    background-color: rgb(242, 191, 232);
+    border: 2px solid rgb(240, 244, 245);
+    border-radius: 10px;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+
+.divs{
+  background-color: hsl(35, 68%, 73%);
+border: 2x solid #007bff;
+margin: 30px;
+border-radius: 10px;
+}
+   body {
       margin: 0;
-      height: 100vh;
-      display: flex;
-      justify-content: center; 
-      align-items: center;     
+      padding: 0;
       background-color: aqua;
     }
 
-    .welDiv {
-        font-family: monospace;
-      font-size: large;
-      background-color: lightpink;
-      padding: 30px;
-      color: white;
-      border: 1px solid #ccc;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    .navBar {
+      display: flex;
+      gap: 20px;
+      padding: 20px;
+      background-color: #ccf078;
     }
 
+    .navBar a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .navBar a:hover {
+      color: #de585a;
+      border-color: rgb(27, 24, 24);
+    }
+
+    .divs {
+      border: 20px solid white;
+    }
 
 </style>
 </html>
